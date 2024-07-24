@@ -1,0 +1,71 @@
+A functionality where user can give vote to the given sent of candidates
+
+Models
+1. candidate
+2. Voter
+3. Admin
+
+
+Routes
+
+User Authentication
+    /signup         -POST  create a new user (cand/voter/admin)
+    /signup/:cand   -POST create a new candidate
+    /login          -POST   login with existing user
+
+User Profile
+    /profile        -GET  get user's profile details
+    /profile/:pass  -PUT  update user's password
+
+Voting:
+    /cand          GET   the list of candidates
+    /vote/:CandId   POST  vote to a particular candidate
+    /vote/count     GET   the list of candidates sorted by vote count
+
+Admin:
+    /cand          POST Add a new candidate
+    /cand          GET  Get the list of candidate
+    /cand/:candId  POST Update the candidate profile
+    /cand/:candId  DELETE delete the candidate profile
+
+
+
+
+
+
+
+
+Screens:
+
+1. Candidate signup (local only) /login (local only) /register/ getStatus (Vote list of all candidates)
+2. Voter signup both google and local/ voteList / getStatus (Vote list of all candidates)
+3. Admin signup both google and local/ editVote/ delVoter/ delCand / getStatus (Vote list of all candidates)
+
+Candidate signup 
+Candidate login
+candidate register
+Voting Status 
+
+voter signup 
+voter login
+voter voting list // to vote for a candidate
+Voting Status 
+
+Admin signup both
+Admin login
+Edit voter
+Edit Candidate
+Edit votes
+Voting Status 
+
+
+
+
+functionality?
+
+1. User signin/ signup
+2. See list of candidates
+3. Vote one of candidates
+4. A route which shows list of users as per the live vote count
+5. User data must have adhar no.
+6. Admin should have access to delete/update the candidate and votes
