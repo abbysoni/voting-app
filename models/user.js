@@ -1,7 +1,13 @@
 const mongoose = require('mongoose');
+const findOrCreate = require('mongoose-findOrCreate');
+const bcrypt = require('bcrypt');
 
 const userSchema = new mongoose.Schema({
-    name:String,
+    name:{
+        type: String,
+        required: true,
+        unique:true
+      },
     email: {
       type: String,
       validate: {
