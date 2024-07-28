@@ -10,7 +10,6 @@ Routes
 
 User Authentication
     /signup         -POST  create a new user (cand/voter/admin)
-    /signup/:cand   -POST create a new candidate (pending)
     /login          -POST   login with existing user
 
 User Profile
