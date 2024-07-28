@@ -1,13 +1,6 @@
 A functionality where user can give vote to the given sent of candidates
 
-Models
-1. candidate
-2. Voter
-3. Admin
-
-
 Routes
-
 User Authentication
     /signup         -POST  create a new user (cand/voter/admin)
     /login          -POST   login with existing user
@@ -59,7 +52,10 @@ Edit votes
 Voting Status 
 
 
-
+Models
+1. candidate
+2. Voter
+3. Admin
 
 functionality?
 
