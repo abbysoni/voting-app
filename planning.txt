@@ -10,23 +10,24 @@ Routes
 
 User Authentication
     /signup         -POST  create a new user (cand/voter/admin)
-    /signup/:cand   -POST create a new candidate
+    /signup/:cand   -POST create a new candidate (pending)
     /login          -POST   login with existing user
 
 User Profile
     /profile        -GET  get user's profile details
     /profile/:pass  -PUT  update user's password
 
-Voting:
-    /cand          GET   the list of candidates
+Voting: (pending)
+    /cand           GET   the list of candidates
     /vote/:CandId   POST  vote to a particular candidate
-    /vote/count     GET   the list of candidates sorted by vote count
+    /vote/count     GET  List of candidates sorted by vote count
+    /vote/party     GET  The vote count sorted by party
 
 Admin:
-    /cand          POST Add a new candidate
-    /cand          GET  Get the list of candidate
-    /cand/:candId  POST Update the candidate profile
-    /cand/:candId  DELETE delete the candidate profile
+    /cand/add       POST Add a new candidate
+    /cand/list      GET  Get the list of candidate
+    /cand/:candId   PUT Update the candidate profile
+    /cand/:candId   DELETE delete the candidate profile
 
 
 
